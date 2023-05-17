@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const HeroStyle = styled.div`
   .welcome {
@@ -7,15 +18,82 @@ const HeroStyle = styled.div`
     align-items: center;
     flex-direction: row;
     height: fit-content;
+    position: relative;
+
+    .img-container {
+      height: fit-content;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
 
     img {
-      width: 40%;
-      height: 40%;
+      width: 60%;
+      height: 60%;
       object-fit: cover;
-      margin-left: 10rem;
       margin-right: 0;
       border-radius: 30%;
       margin-top: -10%;
+      transition: filter 1s, box-shadow 0.5s;
+      filter: brightness(0.9);
+      &.hovered {
+        filter: brightness(0.2);
+        box-shadow: 0 0 50px rgba(164, 132, 232, 1);
+      }
+    }
+
+    .overlay {
+      color: white;
+      font-size: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      pointer-events: none;
+      font-family: 'Playfair Display', serif;
+      line-height: 2.5rem;
+
+      span {
+        color: #a484e8;
+      }
+
+      .overlay-line {
+        opacity: 0;
+      }
+
+      .overlay-line:nth-child(1) {
+        animation: ${fadeIn} 0.5s ease-in forwards;
+        animation-delay: 0.1s;
+      }
+
+      .overlay-line:nth-child(2) {
+        animation: ${fadeIn} 0.5s ease-in forwards;
+        animation-delay: 0.3s;
+      }
+
+      .overlay-line:nth-child(3) {
+        animation: ${fadeIn} 0.5s ease-in forwards;
+        animation-delay: 0.5s;
+      }
+
+      .overlay-line:nth-child(4) {
+        animation: ${fadeIn} 0.5s ease-in forwards;
+        animation-delay: 0.7s;
+      }
+
+      .overlay-line:nth-child(5) {
+        animation: ${fadeIn} 0.5s ease-in forwards;
+        animation-delay: 0.9s;
+      }
+
+      .overlay-line:nth-child(6) {
+        animation: ${fadeIn} 0.5s ease-in forwards;
+        animation-delay: 1.1s;
+      }
+
     }
 
     .text {
@@ -30,8 +108,9 @@ const HeroStyle = styled.div`
 
       p {
         font-family: 'Playfair Display', serif;
-        font-size: 30px;
+        font-size: 28px;
       }
+
 
       h1 {
         display: flex;
@@ -41,21 +120,22 @@ const HeroStyle = styled.div`
         .ola {
           font-size: 50px;
           margin-right: 0.5rem;
-          color: #582970;
+          color: #a484e8;
           font-family: 'Russo One', sans-serif;
+          margin-bottom: -3rem;
         }
 
         h2 {
           font-size: 30px;
+          display: flex;
+          flex-direction: row;
         }
       }
 
       .badas {
         font-size: 50px;
         margin: 0 auto;
-        color: #582970;
-        margin-top: -2rem;
-        margin-bottom: -1rem;
+        color: #a484e8;
       }
     }
   }
@@ -65,21 +145,30 @@ const HeroStyle = styled.div`
       flex-direction: column;
 
       img {
-        width: 80%;
-        height: auto;
+        width: 100vw;
+        height: 100%;
         margin-left: 0;
         margin-top: 0;
         border-radius: 10px;
+        object-fit: cover;
       }
 
       .text {
+        margin-top: 5rem;
         margin-left: 0;
         margin-right: 0;
+        position: absolute;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.562);
 
         h1 {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          justify-content: space-between;
+        }
+        .chame{
+            margin-top: 3rem;
+            margin-bottom: -3rem;
         }
 
         .badas {
