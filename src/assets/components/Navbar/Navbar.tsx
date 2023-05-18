@@ -12,7 +12,10 @@ function Navbar () {
             <img className="logo" src={Logo} alt="" />
             <ul className="links">
               <li>
-                <a href="#Sobre">Sobre</a>
+                <a href="#hero">Início</a>
+              </li>
+              <li>
+                <a href="#about">Sobre</a>
               </li>
               <li>
                 <a href="#Projetos">Projetos</a>

@@ -12,6 +12,18 @@ const fadeIn = keyframes`
 `;
 
 const HeroStyle = styled.div`
+  .purple-line {
+  border: none;
+  margin-top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b7a1e7d3;
+  filter: brightness(0.7);
+  z-index: 9999;
+}
+
+
   .welcome {
     background-size: cover;
     display: flex;
@@ -38,6 +50,7 @@ const HeroStyle = styled.div`
       margin-top: -10%;
       transition: filter 1s, box-shadow 0.5s;
       filter: brightness(0.9);
+      opacity: 0.8;
       &.hovered {
         filter: brightness(0.2);
         box-shadow: 0 0 50px rgba(164, 132, 232, 1);
@@ -138,6 +151,7 @@ const HeroStyle = styled.div`
         color: #a484e8;
       }
     }
+    
   }
 
   @media (max-width: 768px) {

@@ -51,6 +51,7 @@ function Hero() {
 
   return (
     <HeroStyle>
+      <section id="hero">
       <div className="welcome">
         <div className="text">
           <h1>
@@ -93,8 +94,9 @@ function Hero() {
             </div>
           )}
         </div>
-        
+          
       </div>
+      </section>
     </HeroStyle>
   );
 }
