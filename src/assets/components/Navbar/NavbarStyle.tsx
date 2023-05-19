@@ -55,7 +55,7 @@ const NavbarStyle = styled.div`
 
   .links li a {
 
-    color: white;
+    color: #e9ecc7;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
@@ -76,7 +76,7 @@ const NavbarStyle = styled.div`
 
   .social li a {
     font-size: 1.3rem;
-    color: white;
+    color: #e9ecc7;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
@@ -85,7 +85,7 @@ const NavbarStyle = styled.div`
   .social li a:hover {
     color: #a484e8;
   }
-
 `;
+
 
 export default NavbarStyle;
