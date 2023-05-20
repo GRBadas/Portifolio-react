@@ -16,6 +16,10 @@ const NavbarStyle = styled.div`
     box-shadow: 0 0 50px #a484e86a;
   }
 
+  .toggle {
+    display: none;
+  }
+
   .links {
     position: absolute;
     display: flex;
@@ -85,6 +89,24 @@ const NavbarStyle = styled.div`
   .social li a:hover {
     color: #a484e8;
   }
+
+  @media screen and (min-width:280px) and (max-width: 1080px){
+        .navbar-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+          }
+          .toggle {
+              display: block;
+              color: #e9ecc7;
+              font-size: 2rem;
+              margin-right: 2rem;
+          }
+        .links,.social {
+            display: none;
+        }
+    }
 `;
 
 
