@@ -13,7 +13,9 @@ const ResponsiveNav = styled.div<ResponsiveNavProps>`
     height: 40vh;
     width: 100%;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 10px #a484e86a;
+    border-radius: 2rem;
     
     ul {
         list-style-type: none;

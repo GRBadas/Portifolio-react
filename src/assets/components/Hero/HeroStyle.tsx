@@ -172,7 +172,9 @@ const HeroStyle = styled.div`
       }
 
       .overlay {
+        margin-top: -1rem;
         font-size: 18px;
+        line-height: normal;
       }
 
       .text {

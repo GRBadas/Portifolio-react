@@ -160,22 +160,26 @@ const AboutStyle = styled.div`
       }
 
       img {
-        margin: 2rem;
-        margin-left: 0;
-        width: 100%;
+        width: 20rem;
         height: auto;
+        margin: 0;
+        margin-top: 5rem;
+        border-style: none;
       }
+
     }
 
     .container-info {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-right: 0;
       margin-bottom: 2rem;
       width: 100%;
     }
 
     .text-info {
-      padding: 0;
+      padding: 2;
       font-size: 18px;
       text-align: center;
     }

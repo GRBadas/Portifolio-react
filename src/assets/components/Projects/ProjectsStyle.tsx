@@ -72,6 +72,23 @@ const ProjectsStyle = styled.div`
         color: #a484e8;
     }
 
+    @media screen and (min-width:280px) and (max-width: 980px) {
+        .projects-container {
+      flex-direction: column;
+      padding: 0;
+      width: 80%;
+    }
+
+    .projects {
+      margin: 0;
+    }
+
+    .title {
+      font-size: 48px;
+      margin-bottom: 3rem;
+    }
+    }
+
 `
 
 export default ProjectsStyle;
