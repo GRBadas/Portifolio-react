@@ -122,10 +122,22 @@ const AboutStyle = styled.div`
     font-size: 20px;
   }
 
-  @media (max-width: 768px) {
-    /* Estilos para tamanhos de tela de celular e tablet */
+  @media screen and (min-width:280px) and (max-width: 980px) {
 
-    .about-title {
+    .container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .icon {
+    font-size: 2rem;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+      .about-title {
       font-size: 48px;
     }
 
@@ -140,33 +152,6 @@ const AboutStyle = styled.div`
 
       .skills {
         margin-left: 0;
-      }
-
-      .container-skills {
-        .icon {
-          margin-left: 2rem;
-        }
-
-        .java, .javascript, .react, .spring {
-          margin-left: 1rem;
-        }
-
-        .java {
-          width: 10rem;
-          margin-left: 5rem;
-        }
-        .javascript {
-          width: 7rem;
-          margin-left: 3.5rem;
-        }
-        .react {
-          width: 5rem;
-          margin-left: 7rem;
-        }
-        .spring {
-          width: 12rem;
-          margin-left: 2.5rem;
-        }
       }
 
       .divider {
@@ -194,7 +179,8 @@ const AboutStyle = styled.div`
       font-size: 18px;
       text-align: center;
     }
-  }
+
+    }
 `;
 
 export default AboutStyle;

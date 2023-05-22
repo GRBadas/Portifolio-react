@@ -12,7 +12,6 @@ const fadeIn = keyframes`
 `;
 
 const HeroStyle = styled.div`
-  /* Estilos gerais */
 
   .purple-line {
     border: none;
@@ -152,8 +151,7 @@ const HeroStyle = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    /* Estilos para tamanhos de tela de celular e tablet */
+  @media screen and (min-width:280px) and (max-width: 980px) {
 
     .welcome {
       margin-top: 5rem;
@@ -164,7 +162,6 @@ const HeroStyle = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 1.5rem;
       }
 
       img {
@@ -204,6 +201,7 @@ const HeroStyle = styled.div`
         }
       }
     }
+
   }
 `;
 
