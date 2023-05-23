@@ -1,9 +1,7 @@
 import { styled } from "styled-components";
 
-interface ResponsiveNavProps {
-    state: boolean;
-  }
 
+// eslint-disable-next-line no-undef
 const ResponsiveNav = styled.div<ResponsiveNavProps>`
     display: flex;
     position: fixed;

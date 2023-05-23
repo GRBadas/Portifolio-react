@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import HeroStyle from './HeroStyle';
 import BadasImage from '../../imgs/Badas.jpg';

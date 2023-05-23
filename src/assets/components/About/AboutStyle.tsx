@@ -18,6 +18,12 @@ const AboutStyle = styled.div`
     margin-bottom: 3rem;
   }
 
+  .head-infos {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -91,11 +97,6 @@ const AboutStyle = styled.div`
       opacity: 0.7;
     }
 
-    .head-infos {
-      font-size: 20px;
-      margin-left: 3rem;
-    }
-
     img {
       background-color: #a484e8;
       height: 300px;
@@ -112,14 +113,13 @@ const AboutStyle = styled.div`
   .container-info {
     display: flex;
     flex-direction: row;
-    margin-right: 4rem;
     align-items: center;
-    width: 50%;
+    width: 90%;
   }
 
   .text-info {
     padding: 0 4rem;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media screen and (min-width:280px) and (max-width: 980px) {
@@ -128,6 +128,18 @@ const AboutStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+  }
+
+  .container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+
+  .text-info {
+    padding: 0 4rem;
+    font-size: 18px;
   }
 
   .icon {

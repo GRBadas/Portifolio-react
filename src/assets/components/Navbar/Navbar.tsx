@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import ResponsiveNav from "./ResponsiveNav";
 
 function Navbar() {
+
   const [navbarState, setNavbarState] = useState<boolean>(false);
 
   useEffect(() => {
