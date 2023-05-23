@@ -29,17 +29,17 @@ function Hero() {
         strings: ["Olá!"],
         onComplete: () => {
           if (chameRef.current) {
-            const chameTyped = new Typed(chameRef.current, {
+            new Typed(chameRef.current, {
               ...options,
               strings: ["Me chame de "],
               onComplete: () => {
                 if (badasRef.current) {
-                  const badasTyped = new Typed(badasRef.current, {
+                  new Typed(badasRef.current, {
                     ...options,
                     strings: ["Badas"],
                     onComplete: () => {
                       if (bemVindoRef.current) {
-                        const bemVindoTyped = new Typed(bemVindoRef.current, {
+                        new Typed(bemVindoRef.current, {
                           ...options,
                           strings: ["Seja bem-vindo(a) ao meu portfólio"]
                         });
