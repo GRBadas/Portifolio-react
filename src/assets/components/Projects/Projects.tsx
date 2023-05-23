@@ -3,10 +3,17 @@ import ProjectsStyle from './ProjectsStyle';
 import siteViagem from '../../imgs/site-viagem.png';
 import todo from '../../imgs/to-do.png';
 
-function Projects() {
-  const [hoveredProject, setHoveredProject] = useState(null);
+interface ProjectData {
+  imageUrl: string;
+  link: string;
+  altText: string;
+  description: string;
+}
 
-  const handleMouseEnter = (index) => {
+function Projects() {
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number | null) => {
     setHoveredProject(index);
   };
 
@@ -14,7 +21,7 @@ function Projects() {
     setHoveredProject(null);
   };
 
-  const projectsData = [
+  const projectsData: ProjectData[] = [
     {
       imageUrl: siteViagem,
       link: 'https://cosmic-manatee-3e55a6.netlify.app',
@@ -43,7 +50,7 @@ function Projects() {
                 onMouseLeave={handleMouseLeave}
               >
                 <div className="project">
-                  <a href={project.link} target="_blank">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <img src={project.imageUrl} alt={project.altText} />
                   </a>
                   {hoveredProject === index && (
