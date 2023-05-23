@@ -4,10 +4,10 @@ import HeroStyle from './HeroStyle';
 import BadasImage from '../../imgs/Badas.jpg';
 
 function Hero() {
-  const olaRef = useRef(null);
-  const chameRef = useRef(null);
-  const badasRef = useRef(null);
-  const bemVindoRef = useRef(null);
+  const olaRef = useRef<HTMLDivElement>(null);
+  const chameRef = useRef<HTMLDivElement>(null);
+  const badasRef = useRef<HTMLDivElement>(null);
+  const bemVindoRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
@@ -18,35 +18,45 @@ function Hero() {
       showCursor: false
     };
 
-    const olaTyped = new Typed(olaRef.current, {
-      ...options,
-      strings: ["Olá!"],
-      onComplete: () => {
-
-        const chameTyped = new Typed(chameRef.current, {
-          ...options,
-          strings: ["Me chame de "],
-          onComplete: () => {
-
-            const badasTyped = new Typed(badasRef.current, {
+    if (
+      olaRef.current &&
+      chameRef.current &&
+      badasRef.current &&
+      bemVindoRef.current
+    ) {
+      const olaTyped = new Typed(olaRef.current, {
+        ...options,
+        strings: ["Olá!"],
+        onComplete: () => {
+          if (chameRef.current) {
+            const chameTyped = new Typed(chameRef.current, {
               ...options,
-              strings: ["Badas"],
+              strings: ["Me chame de "],
               onComplete: () => {
-                
-                const bemVindoTyped = new Typed(bemVindoRef.current, {
-                  ...options,
-                  strings: ["Seja bem-vindo(a) ao meu portfólio"],
-                });
-              },
+                if (badasRef.current) {
+                  const badasTyped = new Typed(badasRef.current, {
+                    ...options,
+                    strings: ["Badas"],
+                    onComplete: () => {
+                      if (bemVindoRef.current) {
+                        const bemVindoTyped = new Typed(bemVindoRef.current, {
+                          ...options,
+                          strings: ["Seja bem-vindo(a) ao meu portfólio"]
+                        });
+                      }
+                    }
+                  });
+                }
+              }
             });
-          },
-        });
-      },
-    });
+          }
+        }
+      });
 
-    return () => {
-      olaTyped.destroy();
-    };
+      return () => {
+        olaTyped.destroy();
+      };
+    }
   }, []);
 
   return (
@@ -65,7 +75,7 @@ function Hero() {
               <div className="bem-vindo" ref={bemVindoRef}></div>
             </p>
           </div>
-          <div className='img-container'>
+          <div className="img-container">
             <img
               src={BadasImage}
               alt=""
