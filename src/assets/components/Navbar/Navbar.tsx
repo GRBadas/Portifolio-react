@@ -110,17 +110,17 @@ function Navbar() {
           </li>
           <li>
             <a href="#About" onClick={() => setNavbarState(false)}>
-              Serviços
+              Sobre
             </a>
           </li>
           <li>
             <a href="#Projetos" onClick={() => setNavbarState(false)}>
-              Recomendações
+              Projetos
             </a>
           </li>
           <li>
             <a href="#Contato" onClick={() => setNavbarState(false)}>
-              Clientes Satisfeitos
+              Contato
             </a>
           </li>
         </ul>
