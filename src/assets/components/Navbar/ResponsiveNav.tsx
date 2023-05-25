@@ -16,7 +16,6 @@ const ResponsiveNav = styled.div<ResponsiveNavProps>`
     transition: 0.4s ease-in-out;
     box-shadow: 0 0 10px #a484e86a;
     
-    
     ul {
         list-style-type: none;
         width: 100%;
@@ -25,6 +24,7 @@ const ResponsiveNav = styled.div<ResponsiveNavProps>`
         align-items: center;
         justify-content: center;
         margin-top: 3rem;
+        padding: 0;
         li {
             width: 100%;
             display: flex;
