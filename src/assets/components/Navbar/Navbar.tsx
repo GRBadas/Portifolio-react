@@ -4,6 +4,7 @@ import { BsInstagram, BsWhatsapp, BsGithub } from 'react-icons/bs';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { VscChromeClose } from 'react-icons/vsc';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { FiMail } from 'react-icons/fi';
 import { useState, useEffect } from 'react';
 import ResponsiveNav from "./ResponsiveNav";
 
@@ -52,6 +53,15 @@ function Navbar() {
             </li>
           </ul>
           <ul className="social">
+          <li>
+              <a
+                href="mailto:grbadas@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiMail />
+              </a>
+            </li>
             <li>
               <a
                 href="https://contate.me/badasdev"

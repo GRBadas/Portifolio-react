@@ -21,7 +21,7 @@ const AboutStyle = styled.div`
   .head-infos {
     display: flex;
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .container {
@@ -190,10 +190,21 @@ const AboutStyle = styled.div`
       width: 100%;
     }
 
-    .text-info {
-      padding: 2;
+    .head-infos {
+      margin-top: 2rem;
       font-size: 18px;
       text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+
+    .text-info {
+      font-size: 18px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
     }
 
     }

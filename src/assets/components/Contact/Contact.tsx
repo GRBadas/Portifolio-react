@@ -1,20 +1,27 @@
 import ContactStyle from "./ContactStyle";
 import { BsInstagram, BsWhatsapp, BsGithub } from 'react-icons/bs';
 import { SlSocialLinkedin } from 'react-icons/sl';
-import ContactForm from "./ContactForm";
+import { FiMail } from 'react-icons/fi';
 
 function Contact() {
 
     return(
         <ContactStyle>
-        <section id="contact">
+        <section id="Contato  ">
             <div className="container">
                 <div className="title">
                     Entre em contato comigo e vamos trabalhar juntos !
                 </div>
-                <h1>Formulário de Contato</h1>
-                <ContactForm />
                     <ul className="social">
+              <li>
+                <a
+                  href="mailto:grbadas@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <FiMail />
+              </a>
+              </li>
             <li>
               <a
                 href="https://contate.me/badasdev"

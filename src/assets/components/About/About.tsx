@@ -37,7 +37,7 @@ function About () {
                         , tenho 24 anos, e almejo me tornar um desenvolvedor fullstack</div>
                       </div>
                     </div>
-                <div className="text-info">Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Copo furadis é disculpa de bebadis, arcu quam euismod magna.Manduma pindureta quium dia nois paga.Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+                <div className="text-info">Em breve aqui aparecerá um textinho legal :) </div>
             </div>
           </div>
         </section>
