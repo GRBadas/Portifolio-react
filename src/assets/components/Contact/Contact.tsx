@@ -63,7 +63,6 @@ function Contact() {
         </section>
         </ContactStyle>
     )
-
 }
 
 export default Contact;

@@ -109,7 +109,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#About" onClick={() => setNavbarState(false)}>
+            <a href="#about" onClick={() => setNavbarState(false)}>
               Sobre
             </a>
           </li>
