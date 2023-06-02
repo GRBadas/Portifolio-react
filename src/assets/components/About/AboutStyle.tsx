@@ -22,6 +22,7 @@ const AboutStyle = styled.div`
     display: flex;
     font-family: 'Playfair Display', serif;
     font-size: 24px;
+    color: #a484e8;
   }
 
   .container {
@@ -90,7 +91,7 @@ const AboutStyle = styled.div`
     }
 
     .divider {
-      height: 30rem;
+      height: 45rem;
       width: 1px;
       background-color: #a484e8;
       border: none;
@@ -120,6 +121,8 @@ const AboutStyle = styled.div`
   .text-info {
     padding: 0 4rem;
     font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
   }
 
   @media screen and (min-width:280px) and (max-width: 980px) {
